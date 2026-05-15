@@ -38,24 +38,29 @@ export default function App() {
       <div className="w-full max-w-md">
 
         {/* HEADER */}
-        <div className="text-center mb-5">
+        <div className="text-center mb-4">
 
-          <div className="bg-gradient-to-b from-[#f8f6ef] to-[#f2ede2] rounded-[32px] px-6 py-5 shadow-sm border border-[#ece6d9]">
+          <div className="bg-gradient-to-b from-[#f8f6ef] to-[#f2ede2] rounded-[24px] px-6 py-5 shadow-sm border border-[#ece6d9]">
 
             <img
               src="/logo.png"
-              className="w-24 mx-auto mb-3"
+              className="w-40 mx-auto"
             />
 
-            <h1 className="text-[2.1rem] font-semibold tracking-tight text-[#232323] leading-none">
-              Tummy Tales
-            </h1>
+            <div className="mt-4 space-y-2">
 
-            <p className="text-[#6f6a62] text-[15px] mt-3 leading-relaxed">
-              Healthy meals. Happy kids.
-            </p>
+              <p className="text-[#3e3a35] text-[15px] leading-relaxed font-medium">
+                Freshly prepared breakfast and lunch meals for school kids.
+              </p>
+
+              <p className="text-[#7b746b] text-[14px] leading-relaxed">
+                Weekly rotating menus designed to make mornings easier for parents.
+              </p>
+
+            </div>
 
           </div>
+
         </div>
 
         {/* PDF CARD */}
@@ -63,25 +68,25 @@ export default function App() {
 
           <motion.div
             key={current}
-            initial={{ opacity: 0, x: 25 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -25 }}
+            exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.25 }}
-            className="bg-white rounded-[34px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-[#ece7dc] overflow-hidden"
+            className="bg-white rounded-[30px] shadow-[0_10px_35px_rgba(0,0,0,0.06)] border border-[#ece7dc] overflow-hidden"
           >
 
-            {/* IMAGE */}
+            {/* THUMBNAIL */}
             <div className="relative px-4 pt-4">
 
               <img
                 src={item.thumbnail}
-                className="w-full rounded-[28px] object-cover"
+                className="w-full rounded-[24px] object-cover"
               />
 
-              {/* LEFT */}
+              {/* LEFT ARROW */}
               <button
                 onClick={prevSlide}
-                className="absolute left-7 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-md shadow-lg rounded-full p-2.5 active:scale-95 transition"
+                className="absolute left-7 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-md shadow-lg rounded-full p-2.5 active:scale-95 transition-all"
               >
                 <ChevronLeft
                   size={20}
@@ -89,10 +94,10 @@ export default function App() {
                 />
               </button>
 
-              {/* RIGHT */}
+              {/* RIGHT ARROW */}
               <button
                 onClick={nextSlide}
-                className="absolute right-7 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-md shadow-lg rounded-full p-2.5 active:scale-95 transition"
+                className="absolute right-7 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-md shadow-lg rounded-full p-2.5 active:scale-95 transition-all"
               >
                 <ChevronRight
                   size={20}
@@ -108,13 +113,15 @@ export default function App() {
               <div className="flex items-start justify-between gap-3">
 
                 <div>
-                  <h2 className="text-[1.45rem] leading-tight font-semibold text-[#1f1f1f]">
+
+                  <h2 className="text-[1.35rem] leading-tight font-semibold text-[#1f1f1f]">
                     {item.title}
                   </h2>
 
                   <p className="text-sm text-[#7b746b] mt-1">
                     View or download the document instantly
                   </p>
+
                 </div>
 
                 <div className="bg-[#f3efe7] text-[#7d756a] text-xs px-3 py-1.5 rounded-full font-medium whitespace-nowrap">
@@ -141,7 +148,7 @@ export default function App() {
                   </button>
                 </a>
 
-                {/* DOWNLOAD */}
+                {/* DOWNLOAD PDF */}
                 <a
                   href={item.pdf}
                   download
@@ -167,12 +174,12 @@ export default function App() {
         {/* DOWNLOAD ALL */}
         <button
           onClick={downloadAll}
-          className="w-full mt-5 bg-[#1f1f1f] hover:bg-black active:scale-[0.99] transition-all text-white py-4 rounded-[24px] font-semibold shadow-lg"
+          className="w-full mt-5 bg-[#1f1f1f] hover:bg-black active:scale-[0.99] transition-all text-white py-4 rounded-[22px] font-semibold shadow-lg"
         >
           Download All Documents
         </button>
 
-        {/* FUTURE DOCS PLACEHOLDER */}
+        {/* FOOTER INFO */}
         <div className="mt-5 text-center text-sm text-[#8a847b] leading-relaxed px-4">
 
           More documents such as subscription plans and parent FAQs
