@@ -4,6 +4,10 @@
 
 body {
   margin: 0;
-  background: #f6f2e8;
-  font-family: Arial, sans-serif;
+  font-family: Inter, sans-serif;
+  background: #f8f5ee;
+}
+
+* {
+  box-sizing: border-box;
 }
