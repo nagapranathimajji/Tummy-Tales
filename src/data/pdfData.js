@@ -9,7 +9,7 @@ const pdfData = [
   {
     id: 2,
     title: "Tummy Tales (Meals Plan)",
-    thumbnail: "//thumbnails/meals-plan-thumbnail.png",
+    thumbnail: "/thumbnails/meals-plan-thumbnail.png",
     pdf: "/pdfs/Tummy_Tales_Meals_Plan.pdf",
   },
 
