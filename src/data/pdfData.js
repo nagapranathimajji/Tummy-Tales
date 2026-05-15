@@ -2,7 +2,7 @@ const pdfData = [
   {
     id: 1,
     title: "Tummy Tales (Rotating Menu)",
-    thumbnail: "/rotating-menu-thumbnail.png",
+    thumbnail: "/public/thumbnails/rotating-menu-thumbnail.png",
     pdf: "/Tummy_Tales_Rotating_Menu.pdf",
   },
 
