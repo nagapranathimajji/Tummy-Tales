@@ -2,14 +2,22 @@ const pdfData = [
   {
     id: 1,
     title: "Tummy Tales (Rotating Menu)",
-    thumbnail: "/thumbnails/rotating-menu.png",
-    pdf: "/pdfs/Tummy Tales (Rotating Menu).pdf",
+    thumbnail: "/rotating-menu-thumbnail.png",
+    pdf: "/Tummy_Tales_Rotating_Menu.pdf",
   },
+
   {
     id: 2,
     title: "Tummy Tales (Meals Plan)",
-    thumbnail: "/thumbnails/meals-plan.png",
-    pdf: "/pdfs/Tummy Tales(Meals Plan).pdf",
+    thumbnail: "/meals-plan-thumbnail.png",
+    pdf: "/Tummy_Tales_Meals_Plan.pdf",
+  },
+
+  {
+    id: 3,
+    title: "Tummy Tales (Parent FAQ)",
+    thumbnail: "/parent-faq-thumbnail.png",
+    pdf: "/Tummy_Tales_Updated_Parent_FAQ.pdf",
   },
 ]
 
